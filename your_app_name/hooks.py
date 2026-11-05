@@ -1,7 +1,7 @@
 app_name = "your_app_name"
-app_title = "OEE_Tracker"
-app_publisher = "yash joshi"
-app_description = "track oee"
+app_title = "oee tracker"
+app_publisher = "yashjoshi"
+app_description = "tracker of machine downtime"
 app_email = "yashkumarjoshi2002@gmail.com"
 app_license = "mit"
 
@@ -15,7 +15,7 @@ app_license = "mit"
 # 	{
 # 		"name": "your_app_name",
 # 		"logo": "/assets/your_app_name/logo.png",
-# 		"title": "OEE_Tracker",
+# 		"title": "oee tracker",
 # 		"route": "/your_app_name",
 # 		"has_permission": "your_app_name.api.permission.has_app_permission",
 # 	}

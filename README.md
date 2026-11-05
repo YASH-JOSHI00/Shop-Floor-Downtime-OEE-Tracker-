@@ -1,6 +1,6 @@
-### OEE_Tracker
+### oee tracker
 
-track oee
+tracker of machine downtime
 
 ### Installation
 

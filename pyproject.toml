@@ -1,9 +1,9 @@
 [project]
 name = "your_app_name"
 authors = [
-    { name = "yash joshi", email = "yashkumarjoshi2002@gmail.com"}
+    { name = "yashjoshi", email = "yashkumarjoshi2002@gmail.com"}
 ]
-description = "track oee"
+description = "tracker of machine downtime"
 requires-python = ">=3.14"
 readme = "README.md"
 dynamic = ["version"]
