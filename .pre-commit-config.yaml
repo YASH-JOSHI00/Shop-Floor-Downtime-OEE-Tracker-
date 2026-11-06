@@ -8,7 +8,7 @@ repos:
     rev: v6.0.0
     hooks:
       - id: trailing-whitespace
-        files: "your_app_name.*"
+        files: "oee_tracker.*"
         exclude: ".*json$|.*txt$|.*csv|.*md|.*svg"
       - id: check-merge-conflict
       - id: check-ast
@@ -38,11 +38,11 @@ repos:
         # Ignore any files that might contain jinja / bundles
         exclude: |
             (?x)^(
-                your_app_name/public/dist/.*|
+                oee_tracker/public/dist/.*|
                 .*node_modules.*|
                 .*boilerplate.*|
-                your_app_name/templates/includes/.*|
-                your_app_name/public/js/lib/.*
+                oee_tracker/templates/includes/.*|
+                oee_tracker/public/js/lib/.*
             )$
 
 
@@ -55,12 +55,12 @@ repos:
         # Ignore any files that might contain jinja / bundles
         exclude: |
             (?x)^(
-                your_app_name/public/dist/.*|
+                oee_tracker/public/dist/.*|
                 cypress/.*|
                 .*node_modules.*|
                 .*boilerplate.*|
-                your_app_name/templates/includes/.*|
-                your_app_name/public/js/lib/.*
+                oee_tracker/templates/includes/.*|
+                oee_tracker/public/js/lib/.*
             )$
 
 ci:

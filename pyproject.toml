@@ -1,5 +1,5 @@
 [project]
-name = "your_app_name"
+name = "oee_tracker"
 authors = [
     { name = "yashjoshi", email = "yashkumarjoshi2002@gmail.com"}
 ]

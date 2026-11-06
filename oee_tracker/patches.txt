@@ -1,6 +1,9 @@
 [pre_model_sync]
 # Patches added in this section will be executed before doctypes are migrated
 # Read docs to understand patches: https://frappeframework.com/docs/v14/user/en/database-migrations
+oee_tracker.patches.fix_module_def_case
 
 [post_model_sync]
 # Patches added in this section will be executed after doctypes are migrated
+oee_tracker.patches.backfill_downtime_reason
+oee_tracker.patches.rename_shop_floor_workspace

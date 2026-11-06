@@ -1,0 +1,59 @@
+Shop Floor,शॉप फ्लोर
+Running: tap to log a stop,चालू: रुकावट दर्ज करने के लिए टैप करें
+Stopped: tap to resume,रुकी हुई: फिर से चालू करने के लिए टैप करें
+Why did {0} stop?,{0} क्यों रुकी?
+Resume {0}?,{0} फिर से चालू करें?
+Resume,फिर से चालू करें
+Resume Machine,मशीन फिर से चालू करें
+Remarks (optional),टिप्पणी (वैकल्पिक)
+Stopped {0} min ago: {1},{0} मिनट पहले रुकी: {1}
+{0} stopped: {1},{0} रुकी: {1}
+{0} running,{0} चालू
+{0} min,{0} मिनट
+Refresh,रिफ्रेश करें
+Plant Floor,प्लांट फ्लोर
+Running,चालू
+Stopped,रुकी हुई
+Idle,खाली
+Open,खुला
+Closed,बंद
+No workstations to show. Check the Plant Floor filter or your Workstation permissions.,दिखाने के लिए कोई मशीन नहीं है। प्लांट फ्लोर फ़िल्टर या अपनी अनुमतियाँ जाँचें।
+Machine stopped since {0},मशीन {0} से रुकी हुई है
+Machine Already Stopped,मशीन पहले से रुकी हुई है
+Workstation {0} already has an open stop {1}. Close it before starting another.,मशीन {0} पर पहले से एक खुली रुकावट {1} है। नई शुरू करने से पहले उसे बंद करें।
+Workstation {0} has no open stop,मशीन {0} पर कोई खुली रुकावट नहीं है
+Pick a valid Downtime Reason,सही रुकावट का कारण चुनें
+Not permitted to resume this machine,आपको यह मशीन चालू करने की अनुमति नहीं है
+Downtime Reason,रुकावट का कारण
+Downtime Entry,रुकावट प्रविष्टि
+Downtime Entries,रुकावट प्रविष्टियाँ
+Shift Definition,शिफ्ट
+Shift,शिफ्ट
+Category,श्रेणी
+Breakdown,ब्रेकडाउन
+Material,सामग्री
+Setup,सेटअप
+Power,बिजली
+Manpower,कर्मचारी
+Quality,गुणवत्ता
+Other,अन्य
+Machine Breakdown,मशीन ब्रेकडाउन
+Unplanned Maintenance,अनियोजित रखरखाव
+Setup / Changeover,सेटअप / चेंजओवर
+Waiting for Material,सामग्री का इंतज़ार
+Power Cut,बिजली कटौती
+Operator Not Available,ऑपरेटर उपलब्ध नहीं
+Operator Error,ऑपरेटर की गलती
+On-machine Quality Check,मशीन पर गुणवत्ता जाँच
+Quality Issue,गुणवत्ता समस्या
+Planned Maintenance,नियोजित रखरखाव
+No Production Planned,कोई उत्पादन नियोजित नहीं
+Availability,उपलब्धता
+Performance,प्रदर्शन
+OEE,OEE
+Downtime (min),रुकावट (मिनट)
+Stops,रुकावटें
+Today's OEE,आज का OEE
+Downtime Minutes Today,आज की रुकावट (मिनट)
+Machines Stopped Now,अभी रुकी मशीनें
+Open Breakdowns,खुले ब्रेकडाउन

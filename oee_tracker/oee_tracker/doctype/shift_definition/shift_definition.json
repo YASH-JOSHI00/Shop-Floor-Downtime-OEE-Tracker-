@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "autoname": "field:shift_name",
+ "creation": "2026-11-05 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "shift_name",
+  "start_time",
+  "end_time",
+  "disabled",
+  "column_break_1",
+  "total_minutes",
+  "break_minutes",
+  "planned_minutes",
+  "breaks_section",
+  "breaks"
+ ],
+ "fields": [
+  {
+   "fieldname": "shift_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shift Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Start Time",
+   "reqd": 1
+  },
+  {
+   "description": "If End Time is earlier than Start Time the shift ends on the next day",
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "End Time",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_minutes",
+   "fieldtype": "Float",
+   "label": "Total Minutes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "break_minutes",
+   "fieldtype": "Float",
+   "label": "Break Minutes",
+   "read_only": 1
+  },
+  {
+   "description": "Total minutes minus breaks",
+   "fieldname": "planned_minutes",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Available Minutes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "breaks_section",
+   "fieldtype": "Section Break",
+   "label": "Breaks"
+  },
+  {
+   "fieldname": "breaks",
+   "fieldtype": "Table",
+   "label": "Breaks",
+   "options": "Shift Break"
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-05 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "OEE Tracker",
+ "name": "Shift Definition",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Manufacturing User"
+  },
+  {
+   "read": 1,
+   "role": "Shopfloor Operator"
+  },
+  {
+   "read": 1,
+   "role": "Shopfloor Supervisor"
+  },
+  {
+   "read": 1,
+   "role": "Maintenance User"
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "shift_name",
+ "track_changes": 1
+}

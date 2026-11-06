@@ -1,0 +1,257 @@
+{
+ "app": "oee_tracker",
+ "charts": [
+  {
+   "chart_name": "OEE Trend",
+   "label": "OEE Trend"
+  },
+  {
+   "chart_name": "Top 5 Downtime Reasons",
+   "label": "Top 5 Downtime Reasons"
+  },
+  {
+   "chart_name": "OEE by Workstation",
+   "label": "OEE by Workstation"
+  }
+ ],
+ "content": "[{\"id\": \"oee0000001\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>OEE Tracker</b></span>\", \"col\": 12}}, {\"id\": \"oee0000002\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Today's OEE\", \"col\": 3}}, {\"id\": \"oee0000003\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Downtime Minutes Today\", \"col\": 3}}, {\"id\": \"oee0000004\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Machines Stopped Now\", \"col\": 3}}, {\"id\": \"oee0000005\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Open Breakdowns\", \"col\": 3}}, {\"id\": \"oee0000006\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Operator Screen\", \"col\": 3}}, {\"id\": \"oee0000007\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Downtime Entry\", \"col\": 3}}, {\"id\": \"oee0000008\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"OEE Summary\", \"col\": 3}}, {\"id\": \"oee0000009\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Downtime Pareto\", \"col\": 3}}, {\"id\": \"oee0000010\", \"type\": \"chart\", \"data\": {\"chart_name\": \"OEE Trend\", \"col\": 12}}, {\"id\": \"oee0000011\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Top 5 Downtime Reasons\", \"col\": 6}}, {\"id\": \"oee0000012\", \"type\": \"chart\", \"data\": {\"chart_name\": \"OEE by Workstation\", \"col\": 6}}, {\"id\": \"oee0000013\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Reports &amp; Masters</b></span>\", \"col\": 12}}, {\"id\": \"oee0000014\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports\", \"col\": 4}}, {\"id\": \"oee0000015\", \"type\": \"card\", \"data\": {\"card_name\": \"Transactions\", \"col\": 4}}, {\"id\": \"oee0000016\", \"type\": \"card\", \"data\": {\"card_name\": \"Setup\", \"col\": 4}}]",
+ "creation": "2026-11-05 10:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "tool",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "OEE Tracker",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 6,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "Downtime Entry",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Downtime Pareto",
+   "link_count": 0,
+   "link_to": "Downtime Pareto",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "Downtime Entry",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Downtime Register",
+   "link_count": 0,
+   "link_to": "Downtime Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "OEE Log",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "OEE Summary",
+   "link_count": 0,
+   "link_to": "OEE Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "Downtime Entry",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "MTTR and MTBF",
+   "link_count": 0,
+   "link_to": "MTTR and MTBF",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "OEE Log",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Shift Comparison",
+   "link_count": 0,
+   "link_to": "Shift Comparison",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "Downtime Entry",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Downtime Analysis",
+   "link_count": 0,
+   "link_to": "Downtime Analysis",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Transactions",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Downtime Entry",
+   "link_count": 0,
+   "link_to": "Downtime Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "OEE Log",
+   "link_count": 0,
+   "link_to": "OEE Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Job Card",
+   "link_count": 0,
+   "link_to": "Job Card",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Setup",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Downtime Reason",
+   "link_count": 0,
+   "link_to": "Downtime Reason",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Shift Definition",
+   "link_count": 0,
+   "link_to": "Shift Definition",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Workstation",
+   "link_count": 0,
+   "link_to": "Workstation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Plant Floor",
+   "link_count": 0,
+   "link_to": "Plant Floor",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "OEE Settings",
+   "link_count": 0,
+   "link_to": "OEE Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-11-05 15:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "OEE Tracker",
+ "name": "OEE Tracker",
+ "number_cards": [
+  {
+   "label": "Today's OEE",
+   "number_card_name": "Today's OEE"
+  },
+  {
+   "label": "Downtime Minutes Today",
+   "number_card_name": "Downtime Minutes Today"
+  },
+  {
+   "label": "Machines Stopped Now",
+   "number_card_name": "Machines Stopped Now"
+  },
+  {
+   "label": "Open Breakdowns",
+   "number_card_name": "Open Breakdowns"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 50.0,
+ "shortcuts": [
+  {
+   "color": "Red",
+   "label": "Operator Screen",
+   "link_to": "shopfloor",
+   "type": "Page"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Downtime Entry",
+   "link_to": "Downtime Entry",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "label": "OEE Summary",
+   "link_to": "OEE Summary",
+   "type": "Report"
+  },
+  {
+   "color": "Orange",
+   "label": "Downtime Pareto",
+   "link_to": "Downtime Pareto",
+   "type": "Report"
+  }
+ ],
+ "title": "OEE Tracker",
+ "type": "Workspace"
+}

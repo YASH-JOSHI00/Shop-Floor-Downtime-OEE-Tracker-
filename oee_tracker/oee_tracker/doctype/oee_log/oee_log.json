@@ -1,0 +1,276 @@
+{
+ "actions": [],
+ "autoname": "OEE-.YYYY.-.#####",
+ "creation": "2026-11-05 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "workstation",
+  "posting_date",
+  "shift",
+  "column_break_1",
+  "shift_start",
+  "shift_end",
+  "is_flagged",
+  "time_section",
+  "shift_minutes",
+  "break_minutes",
+  "planned_downtime",
+  "column_break_2",
+  "planned_time",
+  "unplanned_downtime",
+  "run_time",
+  "downtime_count",
+  "production_section",
+  "ideal_cycle_time",
+  "total_qty",
+  "column_break_3",
+  "good_qty",
+  "rejected_qty",
+  "result_section",
+  "availability",
+  "performance",
+  "column_break_4",
+  "quality",
+  "oee",
+  "remarks_section",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "workstation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Workstation",
+   "options": "Workstation",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Posting Date",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Shift",
+   "options": "Shift Definition"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shift_start",
+   "fieldtype": "Datetime",
+   "label": "Shift Start",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shift_end",
+   "fieldtype": "Datetime",
+   "label": "Shift End",
+   "read_only": 1
+  },
+  {
+   "fieldname": "is_flagged",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Flagged",
+   "read_only": 1
+  },
+  {
+   "fieldname": "time_section",
+   "fieldtype": "Section Break",
+   "label": "Time (minutes)"
+  },
+  {
+   "fieldname": "shift_minutes",
+   "fieldtype": "Float",
+   "label": "Shift Minutes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "break_minutes",
+   "fieldtype": "Float",
+   "label": "Break Minutes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "planned_downtime",
+   "fieldtype": "Float",
+   "label": "Planned Downtime",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "planned_time",
+   "fieldtype": "Float",
+   "label": "Planned Production Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "unplanned_downtime",
+   "fieldtype": "Float",
+   "label": "Unplanned Downtime",
+   "read_only": 1
+  },
+  {
+   "fieldname": "run_time",
+   "fieldtype": "Float",
+   "label": "Run Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "downtime_count",
+   "fieldtype": "Int",
+   "label": "No. of Stops",
+   "read_only": 1
+  },
+  {
+   "fieldname": "production_section",
+   "fieldtype": "Section Break",
+   "label": "Production"
+  },
+  {
+   "fieldname": "ideal_cycle_time",
+   "fieldtype": "Float",
+   "label": "Ideal Cycle Time (sec)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "label": "Total Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "good_qty",
+   "fieldtype": "Float",
+   "label": "Good Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rejected_qty",
+   "fieldtype": "Float",
+   "label": "Rejected Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "result_section",
+   "fieldtype": "Section Break",
+   "label": "OEE"
+  },
+  {
+   "fieldname": "availability",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Availability",
+   "read_only": 1
+  },
+  {
+   "fieldname": "performance",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Performance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Quality",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "oee",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "OEE",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "links": [],
+ "modified": "2026-11-05 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "OEE Tracker",
+ "name": "OEE Log",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 0,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 0,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing User"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Shopfloor Supervisor"
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "workstation"
+}

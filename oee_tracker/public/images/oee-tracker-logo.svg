@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="OEE Tracker">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B5E8E"/>
+      <stop offset="1" stop-color="#0F9488"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="url(#bg)"/>
+  <!-- gauge track -->
+  <path d="M65.6 172 A72 72 0 1 1 190.4 172" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="18" stroke-linecap="round"/>
+  <!-- low / medium / high zones -->
+  <path d="M65.6 172 A72 72 0 0 1 62.2 106.7" fill="none" stroke="#F87171" stroke-width="18" stroke-linecap="round"/>
+  <path d="M69.8 93.7 A72 72 0 0 1 110.5 66.2" fill="none" stroke="#FBBF24" stroke-width="18" stroke-linecap="butt"/>
+  <path d="M120.5 64.4 A72 72 0 0 1 190.4 172" fill="none" stroke="#4ADE80" stroke-width="18" stroke-linecap="round"/>
+  <!-- needle -->
+  <polygon points="159,91.8 133.7,140 122.3,132" fill="#FFFFFF"/>
+  <circle cx="128" cy="136" r="12" fill="#FFFFFF"/>
+  <circle cx="128" cy="136" r="4.5" fill="#0B5E8E"/>
+  <!-- label -->
+  <text x="128" y="214" text-anchor="middle" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="3" fill="#FFFFFF">OEE</text>
+</svg>

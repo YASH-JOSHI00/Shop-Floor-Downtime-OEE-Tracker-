@@ -1,0 +1,49 @@
+<div style="font-family: sans-serif; font-size: 13px;">
+	<p>
+		{{ _("Plant OEE for {0}").format(frappe.format(posting_date, {"fieldtype": "Date"})) }}:
+		<b>{{ plant_oee }}%</b> ({{ _("target") }} {{ target }}%).
+		{{ _("Unplanned downtime") }}: <b>{{ total_unplanned }} {{ _("min") }}</b>.
+	</p>
+
+	{% if below_target %}
+	<p style="color: #c0392b;">
+		<b>{{ _("Below target for {0} days in a row").format(days) }}:</b> {{ below_target | join(", ") }}
+	</p>
+	{% endif %}
+
+	<table cellpadding="6" cellspacing="0" border="1" style="border-collapse: collapse; border-color: #d1d8dd;">
+		<thead style="background: #f5f7fa;">
+			<tr>
+				<th align="left">{{ _("Workstation") }}</th>
+				<th align="left">{{ _("Shift") }}</th>
+				<th align="right">{{ _("Availability") }}</th>
+				<th align="right">{{ _("Performance") }}</th>
+				<th align="right">{{ _("Quality") }}</th>
+				<th align="right">{{ _("OEE") }}</th>
+				<th align="right">{{ _("Unplanned Downtime (min)") }}</th>
+				<th align="left">{{ _("Flags") }}</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for row in logs %}
+			<tr>
+				<td>{{ row.workstation }}</td>
+				<td>{{ row.shift or "" }}</td>
+				<td align="right">{{ row.availability }}%</td>
+				<td align="right">{{ row.performance }}%</td>
+				<td align="right">{{ row.quality }}%</td>
+				<td align="right" style="{% if row.oee < target %}color: #c0392b;{% endif %}"><b>{{ row.oee }}%</b></td>
+				<td align="right">{{ row.unplanned_downtime }}</td>
+				<td>{{ row.remarks or "" }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+	{% if no_stops %}
+	<p style="color: #7f8c8d;">
+		{{ _("No stops logged in the last 7 days (check that operators are recording downtime)") }}:
+		{{ no_stops | join(", ") }}
+	</p>
+	{% endif %}
+</div>

@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "creation": "2026-11-05 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "default_shift",
+  "oee_target",
+  "column_break_1",
+  "qty_source",
+  "alerts_section",
+  "alert_threshold_minutes",
+  "alert_roles",
+  "column_break_2",
+  "send_daily_summary",
+  "summary_roles",
+  "below_target_days",
+  "rebuild_section",
+  "rebuild_from_date",
+  "column_break_3",
+  "rebuild_to_date",
+  "rebuild_oee_logs"
+ ],
+ "fields": [
+  {
+   "description": "Used when a Workstation has no Default Shift and a stop falls outside every shift",
+   "fieldname": "default_shift",
+   "fieldtype": "Link",
+   "label": "Default Shift",
+   "options": "Shift Definition"
+  },
+  {
+   "default": "85",
+   "fieldname": "oee_target",
+   "fieldtype": "Percent",
+   "label": "OEE Target"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Job Card",
+   "description": "Work Order uses Manufacture Stock Entries, for clients that do not use Job Cards",
+   "fieldname": "qty_source",
+   "fieldtype": "Select",
+   "label": "Take Quantities From",
+   "options": "Job Card\nWork Order"
+  },
+  {
+   "fieldname": "alerts_section",
+   "fieldtype": "Section Break",
+   "label": "Alerts"
+  },
+  {
+   "default": "30",
+   "description": "An open stop longer than this alerts the reason's Notify Role and the roles below",
+   "fieldname": "alert_threshold_minutes",
+   "fieldtype": "Int",
+   "label": "Alert Threshold (Minutes)"
+  },
+  {
+   "fieldname": "alert_roles",
+   "fieldtype": "Table MultiSelect",
+   "label": "Alert Roles",
+   "options": "OEE Alert Role"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "send_daily_summary",
+   "fieldtype": "Check",
+   "label": "Send Daily Summary"
+  },
+  {
+   "depends_on": "send_daily_summary",
+   "fieldname": "summary_roles",
+   "fieldtype": "Table MultiSelect",
+   "label": "Daily Summary Roles",
+   "options": "OEE Alert Role"
+  },
+  {
+   "default": "3",
+   "depends_on": "send_daily_summary",
+   "fieldname": "below_target_days",
+   "fieldtype": "Int",
+   "label": "Flag After Days Below Target"
+  },
+  {
+   "description": "Re-run the OEE calculation for a date range, e.g. after correcting old Downtime Entries or cycle times",
+   "fieldname": "rebuild_section",
+   "fieldtype": "Section Break",
+   "label": "Rebuild OEE Logs"
+  },
+  {
+   "fieldname": "rebuild_from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rebuild_to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "rebuild_oee_logs",
+   "fieldtype": "Button",
+   "label": "Rebuild OEE Logs"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-11-05 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "OEE Tracker",
+ "name": "OEE Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
